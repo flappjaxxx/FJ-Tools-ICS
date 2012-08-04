@@ -3,7 +3,6 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/abso_backgroundblk2"
     >
 <TextView 
     android:layout_width="fill_parent"
@@ -30,19 +29,6 @@
  android:layout_width="fill_parent"
  android:layout_height="wrap_content"
  android:text="System Tools"
-    android:textStyle="bold"/>
-<TextView 
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text=""
-    android:padding="20dp"
-    android:textColor="#FFFFFF"
-    />
-<Button
- android:id="@+id/buttonTweak"
- android:layout_width="fill_parent"
- android:layout_height="wrap_content"
- android:text="CPU Tweak"
     android:textStyle="bold"/>
 <TextView 
     android:layout_width="fill_parent"

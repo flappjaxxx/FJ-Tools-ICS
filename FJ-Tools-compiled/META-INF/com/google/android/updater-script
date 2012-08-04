@@ -11,6 +11,6 @@ set_perm_recursive(0, 2000, 0777, 0777, "/system/etc/init.d");
 run_program("/sbin/umount", "/system");
 
 ui_print(" ");
-ui_print("Collective-Tools Latest Version");
+ui_print("FJ-Tools Latest Version");
 ui_print("Enjoy");
 ui_print(" ");

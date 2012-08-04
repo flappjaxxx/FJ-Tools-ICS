@@ -25,8 +25,8 @@ public class FJToolsActivity extends Activity {
 	     Button buttonTools = (Button)findViewById(R.id.buttonTools);        
 	     buttonTools.setOnClickListener(toolsListener); // Register the onClick listener with the implementation above
 	     
-	     Button buttonTweak = (Button)findViewById(R.id.buttonTweak);        
-	     buttonTweak.setOnClickListener(tweakListener); // Register the onClick listener with the implementation above
+	  //   Button buttonTweak = (Button)findViewById(R.id.buttonTweak);        
+	    // buttonTweak.setOnClickListener(tweakListener); // Register the onClick listener with the implementation above
 	     
 	     Button buttonOTA = (Button)findViewById(R.id.buttonOTA);        
 	     buttonOTA.setOnClickListener(otaListener); // Register the onClick listener with the implementation above
@@ -49,12 +49,12 @@ public class FJToolsActivity extends Activity {
 	    };
 	    
 	 // Create an anonymous implementation of OnClickListener
-	    private OnClickListener tweakListener = new OnClickListener() {
-	    	public void onClick(View view) {
-	            Intent intent = new Intent(FJToolsActivity.this, WIPActivity.class);
-	            startActivity(intent);
-	          }
-	    };
+	//    private OnClickListener tweakListener = new OnClickListener() {
+	  //  	public void onClick(View view) {
+	    //        Intent intent = new Intent(FJToolsActivity.this, WIPActivity.class);
+	      //      startActivity(intent);
+	        //  }
+	   // };
 	    
 	 // Create an anonymous implementation of OnClickListener
 	    private OnClickListener otaListener = new OnClickListener() {
