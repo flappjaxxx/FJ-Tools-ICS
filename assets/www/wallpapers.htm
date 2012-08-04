@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OTA</title>
+<script type="text/javascript" charset="utf-8">
+var fileTransfer = new FileTransfer();
+
+fileTransfer.download(
+    url,
+    filePath,
+    function(entry) {
+        console.log("download complete: " + entry.fullPath);
+    },
+    function(error) {
+        console.log("download error source " + error.source);
+        console.log("download error target " + error.target);
+        console.log("upload error code" + error.code);
+    }
+);
+</script>
+<style type="text/css">
+body 
+
+{
+background-image:url('images/Gray.jpg');
+}
+a:link {color:cyan; text-decoration: none; }
+a:active {color:white; text-decoration: none; }
+a:visited {color:white; text-decoration: none; }
+body {color:white; text-decoration: none; }
+
+</style>
+<script>
+function RemoveWhitespace(xml)
+{
+	var loopIndex;
+	for (loopIndex = 0; loopIndex < xml.childNodes.length; loopIndex++)
+	{
+		var currentNode = xml.childNodes[loopIndex];
+		if (currentNode.nodeType == 1){RemoveWhitespace(currentNode);}
+		if (((/^\s+$/.test(currentNode.nodeValue))) && (currentNode.nodeType == 3))
+		{
+			xml.removeChild(xml.childNodes[loopIndex--]);
+		}
+	}
+}
+
+function GetParam(name)
+{
+  var start=location.search.indexOf("?"+name+"=");
+  if (start<0) start=location.search.indexOf("&"+name+"=");
+  if (start<0) return '';
+  start += name.length+2;
+  var end=location.search.indexOf("&",start)-1;
+  if (end<0) end=location.search.length;
+  var result='';
+  for(var i=start;i<=end;i++) {
+    var c=location.search.charAt(i);
+    result=result+(c=='+'?' ':c);
+  }
+  return unescape(result);
+}	
+</script>
+</head>
+<body><div>
+    <table border=0 width="100%"><tr><td width=48></td><td align="center" width="*">
+<img src="images/wallpaper.png" width="200">
+    </td><td width=48></td></tr></table>
+    </div>
+    <P>
+	<DIV style="font-size:12px;">
+	
+		<script>
+		
+		var oRequest = new XMLHttpRequest();
+		var elementArray=null;
+		var ITEMNAME = 0;
+		var AUTHOR = 1;
+		var LOCATION = 2;
+		var IMAGE = 3;
+		var VERSION = 4;
+
+		var sURL = "http://rootdev.org/i717/TU2/OTA/wallpaper.xml"; 
+		
+		oRequest.open("GET",sURL,false);
+		oRequest.setRequestHeader("Content-Type", "text/xml");
+		oRequest.setRequestHeader("Cache-Control","no-cache");
+		oRequest.send(null);
+		
+		var xmlDoc = oRequest.responseXML;
+		
+		// have to remove whitespace due to browser
+		RemoveWhitespace(xmlDoc);
+		
+		// first get the theme files
+		elementArray = xmlDoc.getElementsByTagName('wallpaper');
+		
+		document.write('<font size=2><u>Instructions:</u><br>1. Click Download To Download Wallpaper(Will open Browser)<br>2. Enjoy!</font><hr>');
+		
+		for (i = 0; i < elementArray.length ; i++)
+		{
+			document.write("<table border=0 width=\"100%\"><tr><td>");
+			if (elementArray[i].childNodes[ITEMNAME].hasChildNodes())
+			   	document.write('Name : ' + elementArray[i].childNodes[ITEMNAME].childNodes[0].nodeValue + '<br>');
+			if (elementArray[i].childNodes[AUTHOR].hasChildNodes())
+			   	document.write('Created By : ' + elementArray[i].childNodes[AUTHOR].childNodes[0].nodeValue + '<br>');
+			if (elementArray[i].childNodes[LOCATION].hasChildNodes())
+				document.write('<a href=\"' + elementArray[i].childNodes[LOCATION].childNodes[0].nodeValue + '\">Download</a><br>');
+			if (elementArray[i].childNodes[VERSION].hasChildNodes())
+			   	document.write('Rom and Version : ' + elementArray[i].childNodes[VERSION].childNodes[0].nodeValue + '<br>');
+			document.write("</td><td width=\"30%\" align=\"center\">");
+			if (elementArray[i].childNodes[IMAGE].hasChildNodes()){
+				document.write('<img src=\"' + elementArray[i].childNodes[IMAGE].childNodes[0].nodeValue + '\" height=100 >');
+			}
+			document.write("</td></tr></table>");
+			document.write("<hr><br>"); 
+		}
+		
+		</script>
+    
+    </DIV>
+</body>
+</html>

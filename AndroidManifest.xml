@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.flappjaxxx.fjtools"
+      android:versionCode="6"
+      android:versionName="6.6">
+    <uses-sdk android:minSdkVersion="15" />
+<supports-screens
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:smallScreens="true"
+		android:resizeable="true"
+		android:anyDensity="true"
+		/>
+		<uses-permission android:name="android.permission.VIBRATE" />
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+	    <activity android:name=".AppsActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".GPSActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />    
+	    <activity android:name=".UVActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".ExtrasActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".DisplayActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />    
+	    <activity android:name=".ConsoleActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />	
+	    <activity android:name=".OTAActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".ToolsActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".FJTweakActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".SleepMinActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+        <activity android:name=".SleepMaxActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+        <activity android:name=".SleepGovActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+        <activity android:name=".WakeMinActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+        <activity android:name=".WakeMaxActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+        <activity android:name=".WakeGovActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".ChangelogActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	    <activity android:name=".WIPActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" />
+	        <activity android:name="com.flappjaxxx.fjtools.FJToolsActivity"
+	           android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               <!-- <category android:name="android.intent.category.LAUNCHER" />  -->
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

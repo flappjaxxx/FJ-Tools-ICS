@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- use the Android Light theme as the base for our own theme -->
+    <style name="MyTheme" parent="@android:style/Theme.Holo">
+
+        <!-- hide the Window Title -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- You could change the scrollbar, checkbox style, anything! -->
+    </style>
+
+</resources>

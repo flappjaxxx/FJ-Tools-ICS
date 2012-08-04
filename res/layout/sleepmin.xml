@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Please Choose Minimum Sleep Frequency"
+    android:padding="10dp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"/>
+
+<Button
+    android:id="@+id/button192"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:textStyle="bold"
+    android:text="192000"
+    android:textSize="18sp" />
+    <Button
+            android:id="@+id/button384"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+    android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="384000" /><Button
+        android:id="@+id/button486"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="486000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button594"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="594000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button702"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="702000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button864"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="864000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button972"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="972000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button1134"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="1134000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button1350"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="1350000"
+        android:textSize="18sp" />
+    <Button
+            android:id="@+id/button1512"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+    android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="1512000" />
+
+    <!-- <Button
+        android:id="@+id/button1728"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="1728000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button1782"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="1782000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button1836"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="1836000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button1890"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="1890000"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button1944"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+    android:textStyle="bold"
+        android:text="1944000"
+        android:textSize="18sp" />  -->
+</LinearLayout>

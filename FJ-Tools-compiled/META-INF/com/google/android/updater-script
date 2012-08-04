@@ -1,0 +1,16 @@
+set_progress(1.000000);
+
+run_program("/sbin/mount", "/dev/block/mmcblk0p24", "/system");
+delete("/system/app/FJ-Tools*.apk");
+delete("/data/app/com.flappjaxxx.fjtools*.apk");
+package_extract_dir("system", "/system");
+set_perm(0, 0, 0755, "/system/bin/fjtool");
+set_perm(0, 0, 0755, "/system/xbin/andrev_oc");
+set_perm_recursive(0, 2000, 0755, 0750, "/system/media/tweak");
+set_perm_recursive(0, 2000, 0777, 0777, "/system/etc/init.d");
+run_program("/sbin/umount", "/system");
+
+ui_print(" ");
+ui_print("Collective-Tools Latest Version");
+ui_print("Enjoy");
+ui_print(" ");

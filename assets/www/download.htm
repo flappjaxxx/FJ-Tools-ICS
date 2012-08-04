@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OTA</title>
+<script type="text/javascript" charset="utf-8">
+var fileTransfer = new FileTransfer();
+
+fileTransfer.download(
+    url,
+    filePath,
+    function(entry) {
+        console.log("download complete: " + entry.fullPath);
+    },
+    function(error) {
+        console.log("download error source " + error.source);
+        console.log("download error target " + error.target);
+        console.log("upload error code" + error.code);
+    }
+);
+</script>
+<style type="text/css">
+body {
+background-image:url('images/Gray.jpg');
+}
+a:link {color:cyan; text-decoration: none; }
+a:active {color:white; text-decoration: none; }
+a:visited {color:white; text-decoration: none; }
+body {color:white; text-decoration: none; }
+
+</style>
+</head>
+<body>
+<script>
+
+var version=0;
+var currentVersion = 3.2;
+var sURL  = "http://rootdev.org/i717/TU2/updates/absoversion4.txt"; 
+var oRequest = new XMLHttpRequest();
+
+oRequest.open("GET",sURL,false);
+oRequest.setRequestHeader("Content-Type", "text/plain");
+oRequest.send(null);
+
+var version = oRequest.responseText;
+
+if (version > currentVersion) 
+	{
+		document.location.href="downloadrom.htm";
+	}
+</script>
+    <div>
+    <table border=0 width="100%"><tr><td width=48></td><td align="center" width="*">
+    </td><td width=48></td></tr></table>
+    </div>   
+    <center><h3>Update Available!<br/>
+Right Now would be a good time to Hit Menu<br>
+Then Hit Update Tools!<br>
+<br><u><b><A href="index2.htm">Touch Here</A></b></u> to Skip Update</h3>
+    
+    <br/></center>
+</body>
+</html>

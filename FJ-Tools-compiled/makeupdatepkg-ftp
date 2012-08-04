@@ -1,0 +1,6 @@
+#!/bin/sh
+rm -rf FJ-Tools*.zip FJ*.zip fjtools*.tgz
+sleep 3
+tar -pczf fjtoolsupdate4.tgz system data
+zip -r FJ-Tools-latest.zip META-INF system data
+ftp-upload -h yourftpserver.com -v --passive -u yourusername --password yourpassword -d public_html/your/upload/path fjtoolsupdate4.tgz

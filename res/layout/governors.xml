@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView 
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:text="Sleep Governor"
+    android:padding="0dp"
+    android:textColor="#FFFFFF" android:textStyle="bold"/>
+<TextView 
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:text="Wake Governor"
+    android:padding="0dp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonsmartass2"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="smartassV2" />
+
+        <Button
+            android:id="@+id/button230smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="230400" />
+        </LinearLayout>
+<LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonlagfree"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="lagfree" />
+
+        <Button
+            android:id="@+id/button384smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="384000" />
+        </LinearLayout>
+<LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttoninteractive"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="interactive" />
+        <Button
+            android:id="@+id/button537smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="537600" />
+        </LinearLayout>
+<LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonconservative"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="conservative" />
+
+        <Button
+            android:id="@+id/button691smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="691200" />
+        </LinearLayout>
+<LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonuserspace"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="userspace" />
+
+        <Button
+            android:id="@+id/button844smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="844800" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonpowersave"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="powersave" />
+
+        <Button
+            android:id="@+id/button998smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="998400" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonondemand"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="ondemand" />
+
+        <Button
+            android:id="@+id/button1152smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="1152000" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonperformance"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="performance" />
+        <Button
+            android:id="@+id/button1305smin"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:textSize="14sp"
+            android:text="1305600" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+</LinearLayout>

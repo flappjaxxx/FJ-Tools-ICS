@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Please Choose Wake Governor"
+    android:padding="10dp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"/>
+
+<!-- <Button
+    android:id="@+id/buttonsmartass2"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:text="smartassV2"
+    android:textSize="18sp" 
+    android:textStyle="bold"/>
+
+    <Button
+            android:id="@+id/buttonlagfree"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:text="lagfree"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttoninteractive"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="interactive"
+        android:textSize="18sp"
+    android:textStyle="bold" />  -->
+
+    <Button
+        android:id="@+id/buttonconservative"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="conservative"
+        android:textSize="18sp"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonuserspace"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="userspace"
+        android:textSize="18sp"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonpowersave"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="powersave"
+        android:textSize="18sp"
+    android:textStyle="bold" />
+
+    <Button
+            android:id="@+id/buttonondemand"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:text="ondemand" 
+    android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonperformance"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="performance"
+        android:textSize="18sp"
+    android:textStyle="bold" />
+</LinearLayout>

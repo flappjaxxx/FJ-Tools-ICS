@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OTA</title>
+<script type="text/javascript" charset="utf-8">
+var fileTransfer = new FileTransfer();
+
+fileTransfer.download(
+    url,
+    filePath,
+    function(entry) {
+        console.log("download complete: " + entry.fullPath);
+    },
+    function(error) {
+        console.log("download error source " + error.source);
+        console.log("download error target " + error.target);
+        console.log("upload error code" + error.code);
+    }
+);
+</script>
+<style type="text/css">
+body {
+background-image:url('images/Gray.jpg');
+}
+a:link {color:cyan; text-decoration: none; }
+a:active {color:white; text-decoration: none; }
+a:visited {color:white; text-decoration: none; }
+body {color:white; text-decoration: none; }
+
+</style>
+</head>
+<body>
+<center>
+<br><br>
+<a href="roms.htm"><img src="images/roms.png" width="375"></a><br><br>
+<a href="apps.htm"><img src="images/apps.png" width="375"></a><br><br>
+<a href="wallpapers.htm"><img src="images/wallpaper.png" width="375"></a></center>
+</body>
+</html>
