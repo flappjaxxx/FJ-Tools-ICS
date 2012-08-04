@@ -1,0 +1,2 @@
+1. Upload version files to a directory you can point your tools to.
+2. Upload OTA Example files to a directory you can point your OTA files to. (These are in the apk source in assets/www)
