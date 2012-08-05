@@ -1,0 +1,3 @@
+1. Download versionfiles.zip changelog.zip & OTA-ExampleFiles.zip from https://github.com/flappjaxxx/FJ-Tools-ICS/downloads
+2. Upload version files and changelog files to a directory you can point your tools to.
+3. Upload OTA Example files to a directory you can point your OTA files to. (These are in the apk source in assets/www)
